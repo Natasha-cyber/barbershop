@@ -4,3 +4,93 @@ html,body {
  margin: 0;
  padding: 0;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main_header, .container, .main_navigation, .user_info, .logo_barbershop,
+.features, .features_item, .main_content, .main_content_left,
+.main_content_right, footer, .footer_contacts, .footer_social, .footer_copyright {
+  border: 2px solid #000;
+}
+
+.main_header {
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main_navigation {
+ width: 790px;
+ float: left;
+}
+
+.user_info {
+  width: 140px;
+  float: right;
+}
+
+.logo_barbershop {
+  width: 370px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features_item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.features_item:last-child {
+  margin-right: 0;
+}
+
+.main_content {
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.main_content_left {
+  float: left;
+  width: 380px;
+}
+
+.main_content_right {
+  float: right;
+  width: 300px;
+}
+
+.main_footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer_contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer_social {
+  float: left;
+  width: 180px;
+}
+
+.footer_copyright {
+  float: right;
+  width: 140px;
+}
