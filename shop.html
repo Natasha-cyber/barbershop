@@ -7,106 +7,114 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <a href="#"><img src="img/logo.png" alt="Барбершоп Бородинский"></a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+    <div class="container clearfix">
+      <div class="navigation">
+        <a href="#"><img src="img/logo.png" alt="Барбершоп Бородинский"></a>
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+      </div>
       <div class="user_info">
         <a class="login" href="#">Вход</a>
       </div>
     </div>
   </header>
   <main class="container">
-    <h1>Средства для ухода</h1>
-    <div class="bread_crumbs">
-      <ul>
-        <li><a href="#">главная</a></li>
-        <li><a href="#">магазин</a></li>
-        <li>средства для ухода</li>
-      </ul>
+    <div class="page_title">
+      <h1>Средства для ухода</h1>
+      <div class="bread_crumbs">
+        <ul>
+          <li><a href="#">главная</a></li>
+          <li><a href="#">магазин</a></li>
+          <li>средства для ухода</li>
+        </ul>
+      </div>
     </div>
-    <form class="" action="index.html" method="post">
-      <fieldset>
-        <legend>Производители:</legend>
-          <label><input type="checkbox" name="Baxter of California" checked>Baxter of California</label><br>
-          <label><input type="checkbox" name="Mr Natty">Mr Natty</label><br>
-          <label><input type="checkbox" name="Suavecito" checked>Suavecito</label><br>
-          <label><input type="checkbox" name="Malin+Goetz">Malin+Goetz</label><br>
-          <label><input type="checkbox" name="Murray’s">Murray’s</label><br>
-          <label><input type="checkbox" name="American Crew" checked>American Crew</label>
-      </fieldset>
-      <fieldset>
-        <legend>Группы товаров:</legend>
-          <label><input type="radio" name="product_group" value="shaving_supplies">Бритвенные принадлежности</label><br>
-          <label><input type="radio" name="product_group" value="care_products" checked>Средства для ухода</label><br>
-          <label><input type="radio" name="product_group" value="accessories">Аксессуары</label><br>
-          <button type="submit" class="btn show_group">Показать</button>
-      </fieldset>
-    </form>
-    <div class="right_col products">
-      <article class="product">
-        <a href="#"><img src="product-1.jpg" alt=""></a>
-        <h1><a href="#"><span class="category">Набор для путешествий</span>
-<span class="product_title">«Baxter of California»</span></a></h1>
-        <div>
-          <span class="product_price">2 900 руб.</span>
-          <a class="btn" href="#">купить</a>
-        </div>
-      </article>
+    <div class="page_content clearfix">
+      <div class="shop_page_content_left">
+        <form class="" action="index.html" method="post">
+          <fieldset>
+            <legend>Производители:</legend>
+              <label><input type="checkbox" name="Baxter of California" checked>Baxter of California</label><br>
+              <label><input type="checkbox" name="Mr Natty">Mr Natty</label><br>
+              <label><input type="checkbox" name="Suavecito" checked>Suavecito</label><br>
+              <label><input type="checkbox" name="Malin+Goetz">Malin+Goetz</label><br>
+              <label><input type="checkbox" name="Murray’s">Murray’s</label><br>
+              <label><input type="checkbox" name="American Crew" checked>American Crew</label>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров:</legend>
+              <label><input type="radio" name="product_group" value="shaving_supplies">Бритвенные принадлежности</label><br>
+              <label><input type="radio" name="product_group" value="care_products" checked>Средства для ухода</label><br>
+              <label><input type="radio" name="product_group" value="accessories">Аксессуары</label><br>
+              <button type="submit" class="btn show_group">Показать</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="shop_page_content_right">
+        <article class="product">
+          <a href="#"><img src="product-1.jpg" alt=""></a>
+          <h1><a href="#"><span class="category">Набор для путешествий</span>
+  <span class="product_title">«Baxter of California»</span></a></h1>
+          <div>
+            <span class="product_price">2 900 руб.</span>
+            <a class="btn" href="#">купить</a>
+          </div>
+        </article>
 
-      <!-- Сделать все по подобию первого!!!! -->
-      <article class="product">
-        <a href="#"><img src="product-2.jpg" alt=""></a>
-        <h1 class="product_title"><a href="#">Увлажняющий кондиционер
-«Baxter of California»</a></h1>
-        <p class="product_price">750 руб.</p>
-        <a class="btn" href="#">купить</a>
-      </article>
-      <article class="product">
-        <a href="#"><img src="product-3.jpg" alt=""></a>
-        <h1 class="product_title"><a href="#">Гель для волос
-«SUAVECITO»</a></h1>
-        <p class="product_price">290 руб.</p>
-        <a class="btn" href="#">купить</a>
-      </article>
-      <article class="product">
-        <a href="#"><img src="product-4.jpg" alt=""></a>
-        <h1 class="product_title"><a href="#">Глина для укладки волос
-«American crew»</a></h1>
-        <p class="product_price">500 руб.</p>
-        <a class="btn" href="#">купить</a>
-      </article>
-      <article class="product">
-        <a href="#"><img src="product-5.jpg" alt=""></a>
-        <h1 class="product_title"><a href="#">Гель для волос
-«AMERICAN CREW»</a></h1>
-        <p class="product_price">300 руб.</p>
-        <a class="btn" href="#">купить</a>
-      </article>
-      <article class="product">
-        <a href="#"><img src="product-6.jpg" alt=""></a>
-        <h1 class="product_title"><a href="#">Набор для бритья
-«Baxter of California»</a></h1>
-        <p class="product_price">3 900 руб.</p>
-        <a class="btn" href="#">купить</a>
-      </article>
-    </div>
-    <div class="page_navigation">
-      <ul>
-        <li><a class="btn" href="#">1</a></li>
-        <li><a class="btn" href="#">2</a></li>
-        <li><a class="btn" href="#">3</a></li>
-        <li><a class="btn" href="#">4</a></li>
-      </ul>
+        <!-- Сделать все по подобию первого!!!! -->
+        <article class="product">
+          <a href="#"><img src="product-2.jpg" alt=""></a>
+          <h1 class="product_title"><a href="#">Увлажняющий кондиционер
+  «Baxter of California»</a></h1>
+          <p class="product_price">750 руб.</p>
+          <a class="btn" href="#">купить</a>
+        </article>
+        <article class="product">
+          <a href="#"><img src="product-3.jpg" alt=""></a>
+          <h1 class="product_title"><a href="#">Гель для волос
+  «SUAVECITO»</a></h1>
+          <p class="product_price">290 руб.</p>
+          <a class="btn" href="#">купить</a>
+        </article>
+        <article class="product">
+          <a href="#"><img src="product-4.jpg" alt=""></a>
+          <h1 class="product_title"><a href="#">Глина для укладки волос
+  «American crew»</a></h1>
+          <p class="product_price">500 руб.</p>
+          <a class="btn" href="#">купить</a>
+        </article>
+        <article class="product">
+          <a href="#"><img src="product-5.jpg" alt=""></a>
+          <h1 class="product_title"><a href="#">Гель для волос
+  «AMERICAN CREW»</a></h1>
+          <p class="product_price">300 руб.</p>
+          <a class="btn" href="#">купить</a>
+        </article>
+        <article class="product">
+          <a href="#"><img src="product-6.jpg" alt=""></a>
+          <h1 class="product_title"><a href="#">Набор для бритья
+  «Baxter of California»</a></h1>
+          <p class="product_price">3 900 руб.</p>
+          <a class="btn" href="#">купить</a>
+        </article>
+        <div class="page_navigation">
+          <ul>
+            <li><a class="btn" href="#">1</a></li>
+            <li><a class="btn" href="#">2</a></li>
+            <li><a class="btn" href="#">3</a></li>
+            <li><a class="btn" href="#">4</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </main>
-  <footer>
-    <div class="container">
+  <footer class="footer">
+    <div class="container clearfix">
       <section class="footer_contacts">
         БАРБЕРШОП «БОРОДИНСКИЙ»<br>
         АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
