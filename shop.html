@@ -8,7 +8,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <img src="img/logo.png" alt="Барбершоп Бородинский">
+      <a href="#"><img src="img/logo.png" alt="Барбершоп Бородинский"></a>
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
@@ -23,36 +23,43 @@
   </header>
   <main class="container">
     <h1>Средства для ухода</h1>
-    <ul class="bread_crumbs">
-      <li><a href="#">главная</a></li>
-      <li><a href="#">магазин</a></li>
-      <li>средства для ухода</li>
-    </ul>
-    <div class="left_col">
-      <section class="manufacturer">
-        <b>производители</b>
-        <ul>
-          <li>Baxter of California</li>
-          <li>Mr Natty</li>
-          <li>Suavecito</li>
-          <li>Malin+Goetz</li>
-          <li>Murray’s</li>
-          <li>American Crew</li>
-        </ul>
-      </section>
-      <section>
-        <b>группы товаров:</b>
-        <button class="btn show_group">Показать</button>
-      </section>
+    <div class="bread_crumbs">
+      <ul>
+        <li><a href="#">главная</a></li>
+        <li><a href="#">магазин</a></li>
+        <li>средства для ухода</li>
+      </ul>
     </div>
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Производители:</legend>
+          <label><input type="checkbox" name="Baxter of California" checked>Baxter of California</label><br>
+          <label><input type="checkbox" name="Mr Natty">Mr Natty</label><br>
+          <label><input type="checkbox" name="Suavecito" checked>Suavecito</label><br>
+          <label><input type="checkbox" name="Malin+Goetz">Malin+Goetz</label><br>
+          <label><input type="checkbox" name="Murray’s">Murray’s</label><br>
+          <label><input type="checkbox" name="American Crew" checked>American Crew</label>
+      </fieldset>
+      <fieldset>
+        <legend>Группы товаров:</legend>
+          <label><input type="radio" name="product_group" value="shaving_supplies">Бритвенные принадлежности</label><br>
+          <label><input type="radio" name="product_group" value="care_products" checked>Средства для ухода</label><br>
+          <label><input type="radio" name="product_group" value="accessories">Аксессуары</label><br>
+          <button type="submit" class="btn show_group">Показать</button>
+      </fieldset>
+    </form>
     <div class="right_col products">
       <article class="product">
         <a href="#"><img src="product-1.jpg" alt=""></a>
-        <h1 class="product_title"><a href="#">Набор для путешествий
-«Baxter of California»</a></h1>
-        <p class="product_price">2 900 руб.</p>
-        <a class="btn" href="#">купить</a>
+        <h1><a href="#"><span class="category">Набор для путешествий</span>
+<span class="product_title">«Baxter of California»</span></a></h1>
+        <div>
+          <span class="product_price">2 900 руб.</span>
+          <a class="btn" href="#">купить</a>
+        </div>
       </article>
+
+      <!-- Сделать все по подобию первого!!!! -->
       <article class="product">
         <a href="#"><img src="product-2.jpg" alt=""></a>
         <h1 class="product_title"><a href="#">Увлажняющий кондиционер
