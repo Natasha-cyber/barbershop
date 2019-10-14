@@ -18,8 +18,7 @@ body {
 
 /* Стили главной страницы*/
 
-.features, .features_item, .main_content, .main_content_left,
-.main_content_right, footer, .footer_contacts, .footer_social, .footer_copyright,
+footer, .footer_contacts, .footer_social, .footer_copyright,
 .header, .navigation, .item_title, .item_content, .item_content_left, .item_content_right {
   border: 2px solid #fff;
 }
@@ -101,13 +100,19 @@ opacity: 1;
   width: 18px;
   height: 18px;
   background: url(img/icon-login.png) no-repeat;
+  opacity: 0.3;
 }
 
 .logo_barbershop {
-  width: 370px;
-  height: 200px;
+  width: 368px;
+  height: 204px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 25px; /*???*/
+}
+
+.logo_barbershop img {
+  width: 368px;
+  height: 204px;
 }
 
 .features {
@@ -118,15 +123,52 @@ opacity: 1;
   float: left;
   width: 300px;
   margin-right: 20px;
+
+  text-align: center;
 }
 
 .features_item:last-child {
   margin-right: 0;
 }
 
+.features_name {
+position: relative;
+
+  display: block;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features_item p {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.features_name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+  transform: rotate(45deg);
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-color: #fff;
+}
+
 .main_content {
   padding: 50px 80px;
   margin-bottom: 35px;
+
+  color: #000;
+
+  background: url() no-repeat center, 
+  #f8f5f2 url(img/main-content-bg.jpg);
 }
 
 .main_content_left {
