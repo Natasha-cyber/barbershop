@@ -11,9 +11,12 @@ html,body {
   clear: both;
 }
 
+/* Стили главной страницы*/
+
 .main_header, .container, .main_navigation, .user_info, .logo_barbershop,
 .features, .features_item, .main_content, .main_content_left,
-.main_content_right, footer, .footer_contacts, .footer_social, .footer_copyright {
+.main_content_right, footer, .footer_contacts, .footer_social, .footer_copyright,
+.header, .navigation, .item_title, .item_content, .item_content_left, .item_content_right {
   border: 2px solid #000;
 }
 
@@ -28,7 +31,7 @@ html,body {
 }
 
 .main_navigation {
- width: 790px;
+ width: 780px;
  float: left;
 }
 
@@ -93,4 +96,38 @@ html,body {
 .footer_copyright {
   float: right;
   width: 140px;
+}
+
+/* Стили страницы товара*/
+.header {
+  margin-bottom: 60px;
+}
+
+.navigation {
+  float: left;
+  width: 780px;
+}
+
+.item_title {
+  margin-bottom: 60px;
+}
+
+.item_content_left {
+  width: 460px;
+  float: left;
+
+  min-height: 670px;
+}
+
+.item_content_right {
+  width: 390px;
+  float: right;
+
+  min-height: 550px
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin-top: 50px;
 }
