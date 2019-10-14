@@ -18,7 +18,6 @@ body {
 
 /* Стили главной страницы*/
 
-.logo_barbershop,
 .features, .features_item, .main_content, .main_content_left,
 .main_content_right, footer, .footer_contacts, .footer_social, .footer_copyright,
 .header, .navigation, .item_title, .item_content, .item_content_left, .item_content_right {
@@ -90,6 +89,10 @@ body {
   background-color: #242424;
 }
 
+.login:hover::before {
+opacity: 1;
+}
+
 .login::before {
   content: "";
   position: absolute;
@@ -97,12 +100,12 @@ body {
   left: 20px;
   width: 18px;
   height: 18px;
-  background: #ff0000;
+  background: url(img/icon-login.png) no-repeat;
 }
 
 .logo_barbershop {
   width: 370px;
-  height: 150px;
+  height: 200px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
