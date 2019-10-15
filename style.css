@@ -360,93 +360,6 @@ position: relative;
   border: 2px solid #663d15;
 }
 
-.main_footer {
-  margin-top: 65px;
-  padding-top: 60px;
-  padding-bottom: 40px;
-
-  color: #fff;
-  background: #252525 url(img/footer-bg.jpg);
-}
-
-.footer_contacts {
-  float: left;
-  width: 320px;
-  margin-right: 60px;
-}
-
-.footer_contacts a {
-  color: #fff;
-}
-
-.footer_contacts a:hover {
-  text-decoration: none;
-}
-
-.footer_social {
-  float: left;
-  width: 180px;
-  text-align: center;
-}
-
-.footer_social p {
-  margin: 0;
-  margin-bottom: 15px;
-}
-
-.social_btn {
-  display: inline-block;
-  width: 43px;
-  height: 43px;
-  margin: 0 2px;
-
-  font-size: 0;
-  text-decoration: none;
-  transition:
-    background-position 0.5s,
-    background-color 0.5s;
-}
-
-.social_btn_vk {
-  background: #000 url(img/v.png) no-repeat center;
-}
-
-.social_btn_fb {
-  background: #000 url(img/f.png) no-repeat center;
-}
-
-.social_btn_inst {
-  background: #000 url(img/inst.png) no-repeat center;
-}
-
-
-.social_btn_vk:hover {
-  background: #fff url(img/vk2.gif) no-repeat center;
-}
-
-.social_btn_fb:hover {
-  background: #fff url(img/f2.gif) no-repeat center;
-}
-
-.social_btn_inst:hover {
-  background: #fff url(img/inst2.gif) no-repeat center;
-}
-
-.footer_copyright {
-  float: right;
-  max-width: 180px;
-}
-
-.footer_copyright p {
-  margin: 0;
-  margin-bottom: 15px;
-
-  text-align: center;
-}
-
-.footer_copyright .btn {
-  margin-right: 0;
-}
 
 /* Стили внутренних страниц*/
 
@@ -629,6 +542,296 @@ position: relative;
 
 .short_text {
   padding-right: 75px;
+}
+
+.main_footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  color: #fff;
+  background: #252525 url(img/footer-bg.jpg);
+}
+
+.footer_contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer_contacts a {
+  color: #fff;
+}
+
+.footer_contacts a:hover {
+  text-decoration: none;
+}
+
+.footer_social {
+  float: left;
+  width: 180px;
+  text-align: center;
+}
+
+.footer_social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social_btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+
+  font-size: 0;
+  text-decoration: none;
+  transition:
+    background-position 0.5s,
+    background-color 0.5s;
+}
+
+.social_btn_vk {
+  background: #000 url(img/v.png) no-repeat center;
+}
+
+.social_btn_fb {
+  background: #000 url(img/f.png) no-repeat center;
+}
+
+.social_btn_inst {
+  background: #000 url(img/inst.png) no-repeat center;
+}
+
+
+.social_btn_vk:hover {
+  background: #fff url(img/vk2.gif) no-repeat center;
+}
+
+.social_btn_fb:hover {
+  background: #fff url(img/f2.gif) no-repeat center;
+}
+
+.social_btn_inst:hover {
+  background: #fff url(img/inst2.gif) no-repeat center;
+}
+
+.footer_copyright {
+  float: right;
+  max-width: 180px;
+}
+
+.footer_copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.footer_copyright .btn {
+  margin-right: 0;
+}
+
+/* Всплывающая форма */
+
+.modal_content {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  margin-left: -230px;
+  z-index: 20;
+
+  width: 300px;
+  padding: 50px 80px;
+
+  color: #000;
+
+  background:  #f8f3f0 url(img/main-content-bg.jpg);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal_content_close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal_content_close::before,
+.modal_content_close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal_content_close::before {
+  transform: rotate(45deg);
+}
+
+.modal_content_close::after {
+  transform: rotate(-45deg);
+}
+
+.modal_content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal_content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal_content .login_form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login_form input[type="text"],
+.login_form input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+
+  font-family: "PT Sans Narrow", "Arial", sans-sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #000;
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+  outline: none;
+}
+
+.login_form input:focus {
+  border: 2px solid #663d15;
+}
+
+.login_form input.icon_user {
+  background-image: url(img/icon-user.png);
+  background-repeat: no-repeat;
+  background-position: 268px center;
+}
+
+.login_form input.icon_password {
+  background-image: url(img/icon-pass.png);
+  background-repeat: no-repeat;
+  background-position: 268px center;
+}
+
+.login_form .restore {
+  float: right;
+
+  color: #000;
+}
+
+.login_form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.login_checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login_checkbox {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.login_checkbox:hover {
+  color: #663d15;
+}
+
+.login_checkbox input[type="checkbox"] + .checkbox_indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000;
+}
+
+.login_checkbox input[type="checkbox"]:checked +
+ .checkbox_indicator::before,
+.login_checkbox input[type="checkbox"]:checked +
+ .checkbox_indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 2px;
+
+  width: 14px;
+  height: 2px;
+
+  background-color: #000;
+}
+
+.login_checkbox input[type="checkbox"]:checked +
+ .checkbox_indicator::before {
+  transform: rotate(45deg);
+}
+
+.login_checkbox input[type="checkbox"]:checked +
+ .checkbox_indicator::after {
+  transform: rotate(-45deg);
+}
+
+.modal_content_map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -390px;
+  margin-top: -280px;
+  z-index: 20;
+
+  width: 766px;
+  height: 561px;
+
+  background: #e9e5dc;
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .item_page_content_left {
