@@ -6,14 +6,19 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 
-  background: #000 url(img/index-bg.jpg) no-repeat center top;
+  background: #000 url(../img/index-bg.jpg) no-repeat center top;
   color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .inner_page {
   color: #000;
 
-  background: #f8f3f0 url(img/main-content-bg.jpg) repeat;
+  background: #f8f3f0 url(../img/main-content-bg.jpg) repeat;
 }
 
 .clearfix::after {
@@ -146,7 +151,7 @@ opacity: 1;
   left: 20px;
   width: 18px;
   height: 18px;
-  background: url(img/icon-login.png) no-repeat;
+  background: url(../img/icon-login.png) no-repeat;
   opacity: 0.3;
 }
 
@@ -214,8 +219,8 @@ position: relative;
 
   color: #000;
 
-  background: url(img/main-content-shadow.png) no-repeat center,
-  #f8f5f2 url(img/main-content-bg.jpg);
+  background: url(../img/main-content-shadow.png) no-repeat center,
+  #f8f5f2 url(../img/main-content-bg.jpg);
 }
 
 .main_content_left {
@@ -472,7 +477,7 @@ position: relative;
   line-height: 48px;
   text-align: center;
 
-  background: #f8f3f0 url(img/main-content-bg.jpg) repeat;
+  background: #f8f3f0 url(../img/main-content-bg.jpg) repeat;
 }
 
 .custom_list_1 {
@@ -550,7 +555,7 @@ position: relative;
   padding-bottom: 40px;
 
   color: #fff;
-  background: #252525 url(img/footer-bg.jpg);
+  background: #252525 url(../img/footer-bg.jpg);
 }
 
 .footer_contacts {
@@ -592,28 +597,28 @@ position: relative;
 }
 
 .social_btn_vk {
-  background: #000 url(img/v.png) no-repeat center;
+  background: #000 url(../img/v.png) no-repeat center;
 }
 
 .social_btn_fb {
-  background: #000 url(img/f.png) no-repeat center;
+  background: #000 url(../img/f.png) no-repeat center;
 }
 
 .social_btn_inst {
-  background: #000 url(img/inst.png) no-repeat center;
+  background: #000 url(../img/inst.png) no-repeat center;
 }
 
 
 .social_btn_vk:hover {
-  background: #fff url(img/vk2.gif) no-repeat center;
+  background: #fff url(../img/vk2.gif) no-repeat center;
 }
 
 .social_btn_fb:hover {
-  background: #fff url(img/f2.gif) no-repeat center;
+  background: #fff url(../img/f2.gif) no-repeat center;
 }
 
 .social_btn_inst:hover {
-  background: #fff url(img/inst2.gif) no-repeat center;
+  background: #fff url(../img/inst2.gif) no-repeat center;
 }
 
 .footer_copyright {
@@ -647,7 +652,7 @@ position: relative;
 
   color: #000;
 
-  background:  #f8f3f0 url(img/main-content-bg.jpg);
+  background:  #f8f3f0 url(../img/main-content-bg.jpg);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
@@ -730,13 +735,13 @@ position: relative;
 }
 
 .login_form input.icon_user {
-  background-image: url(img/icon-user.png);
+  background-image: url(../img/icon-user.png);
   background-repeat: no-repeat;
   background-position: 268px center;
 }
 
 .login_form input.icon_password {
-  background-image: url(img/icon-pass.png);
+  background-image: url(../img/icon-pass.png);
   background-repeat: no-repeat;
   background-position: 268px center;
 }
