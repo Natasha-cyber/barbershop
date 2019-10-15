@@ -10,6 +10,12 @@ body {
   color: #fff;
 }
 
+.inner_page {
+  color: #000;
+
+  background: #f8f3f0 url(img/main-content-bg.jpg) repeat;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -18,7 +24,7 @@ body {
 
 /* Стили главной страницы*/
 
-.header, .navigation, .item_title, .item_content, .item_content_left, .item_content_right {
+.item_title, .item_content, .item_content_left, .item_content_right {
   border: 2px solid #fff;
 }
 
@@ -26,6 +32,10 @@ body {
   margin-bottom: 60px;
   background: #000;
   color: #fff;
+}
+
+.inner_page .main_header {
+  margin-bottom: 55px;
 }
 
 .container {
@@ -62,6 +72,44 @@ body {
 
 .main_navigation a:hover {
   background: #242424;
+}
+
+.main_navigation .active {
+  position: relative;
+
+  background-color: none;
+}
+
+.main_navigation .active a:hover {
+  background: none;
+}
+
+.main_navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+
+  height: 5px;
+
+  background-color: #fff;
+}
+
+.main_navigation .active span {
+  display: block;
+  padding: 25px 20px;
+}
+
+.main_navigation .inner_logo {
+  float: left;
+  width: 111px;
+  height: 24px;
+  padding-top: 22px;
+}
+
+.main_navigation .inner_logo:hover {
+  background: none;
 }
 
 .user_info {
@@ -400,18 +448,187 @@ position: relative;
   margin-right: 0;
 }
 
-/* Стили страницы товара*/
-.header {
-  margin-bottom: 55px;
-}
-
-.navigation {
-  float: left;
-  width: 780px;
-}
+/* Стили внутренних страниц*/
 
 .page_title {
   margin-bottom: 55px;
+}
+
+.page_title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.bread_crumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.bread_crumbs li {
+  position: relative;
+
+  display: inline;
+  padding-right: 40px;
+}
+
+.bread_crumbs li::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 5px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.bread_crumbs .current {
+  color: #aba9a7;
+}
+
+.bread_crumbs .current::after {
+  display: none;
+}
+
+.bread_crumbs a {
+  color: #000;
+  text-decoration: none;
+}
+
+.bread_crumbs a:hover {
+  text-decoration: underline;
+}
+
+.page_content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.page_content p {
+  margin: 14px 0;
+}
+
+.page_content table {
+  border-collapse: collapse;
+}
+
+.page_content td {
+  padding: 10px 15px;
+
+  border: 2px solid #000;
+}
+
+/* Нестандартные стили для конткнтных тегов */
+.big_heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  text-align: center;
+}
+
+.big_heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  z-index: 1;
+
+  display: block;
+  border-bottom: 2px solid #000;
+}
+
+.big_heading h2 {
+  position: relative;
+  z-index: 2;
+
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+
+  background: #f8f3f0 url(img/main-content-bg.jpg) repeat;
+}
+
+.custom_list_1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom_list_1 li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom_list_1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.prices_table {
+  width: 100%;
+}
+
+.prices_table td {
+  width: 50%;
+}
+
+.prices_table td:last-child {
+  text-align: center;
+}
+
+.page_columns {
+  margin: 60px 0;
+}
+
+.page_column_left,
+.page_column_right {
+  width: 460px;
+}
+
+.page_column_left {
+  float: left;
+}
+
+.page_column_right {
+  float: right;
+}
+
+.page_column_left *:first-child,
+.page_column_right *:first-child {
+  margin-top: 0;
+}
+
+.page_column_left *:last-child,
+.page_column_right *:last-child {
+  margin-bottom: 0;
+}
+
+.short_text {
+  padding-right: 75px;
 }
 
 .item_page_content_left {
@@ -428,7 +645,6 @@ position: relative;
   min-height: 550px
 }
 
-/* Стили для страницы каталога*/
 
 .shop_page_content_left {
   float:left;
@@ -438,10 +654,4 @@ position: relative;
 .shop_page_content_right {
   float: right;
   width: 700px;
-}
-
-.footer {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  margin-top: 50px;
 }
