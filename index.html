@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
   </head>
   <body>
     <header class="main_header">
@@ -132,5 +133,13 @@
       <div id="yandex_map"></div>
     </div>
     <div class="modal_overlay"></div>
+    <script type="text/javascript">
+      var link = document.querySelector(".login");
+      var popup = document.querySelector(".modal_conent");
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal_content_show");
+      });
+    </script>
   </body>
 </html>

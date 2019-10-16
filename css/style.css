@@ -656,6 +656,10 @@ position: relative;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+.modal_content_show {
+  display: block;
+}
+
 .modal_content_close {
   position: absolute;
   top: 0;
