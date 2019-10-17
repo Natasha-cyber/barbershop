@@ -133,19 +133,6 @@
       <div id="yandex_map"></div>
     </div>
     <div class="modal_overlay"></div>
-    <script type="text/javascript">
-      var link = document.querySelector(".login");
-      var popup = document.querySelector(".modal_content");
-      var close = document.querySelector(".modal_content_close");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal_content_show");
-      });
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal_content_show");
-      });
-    </script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
