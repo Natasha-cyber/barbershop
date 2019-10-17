@@ -54,7 +54,7 @@ img {
  float: left;
 }
 
-.main_navigation ul {
+.main_navigation ul{
   margin: 0;
   padding-left: 0;
   font-size: 0;
@@ -446,6 +446,7 @@ position: relative;
 
   border: 2px solid #000;
 }
+
 
 /* Нестандартные стили для конткнтных тегов */
 .big_heading {
@@ -869,17 +870,58 @@ position: relative;
 .item_page_content_left {
   width: 460px;
   float: left;
-
-  min-height: 670px;
 }
 
 .item_page_content_right {
-  width: 390px;
+  width: 400px;
   float: right;
-
-  min-height: 550px
 }
 
+.item_gallery_content img {
+  display: block;
+  float: left;
+
+  margin-right: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.item_gallery_content a:first-child img {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.item_gallery_content a:last-child img {
+  margin-right: 0;
+}
+
+.vendor_code {
+  color: #aeaeae;
+  float: right;
+}
+
+.item_description {
+  padding-right: 10px;
+  margin: 30px 0;
+}
+
+.product_price {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 27px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #e5e5e5;
+}
+
+.item_page_content_right .custom_list_1 li {
+  margin-bottom: 4px;
+}
 
 .shop_page_content_left {
   float:left;
@@ -889,4 +931,77 @@ position: relative;
 .shop_page_content_right {
   float: right;
   width: 700px;
+}
+
+.product {
+  float: left;
+  width: 220px;
+  height: 286px;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product:nth-child(3n) {
+  margin-right: 0;
+}
+
+.product h1 {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 15px 16px 15px;
+
+}
+
+.product h1 a{
+  color: #000;
+  text-decoration: none;
+}
+
+.product h1 a:hover{
+  text-decoration: underline;
+}
+
+.product .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 0;
+}
+
+.product div {
+  text-align: center;
+}
+
+.page_navigation ul{
+  margin: 0;
+  padding-left: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.page_navigation li{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page_navigation .btn{
+  display: block;
+  padding: 13px 21px;
+  margin-right: 7px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.page_navigation .active span {
+  display: block;
+  padding: 13px 21px;
+  margin-right: 7px;
+
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
 }
