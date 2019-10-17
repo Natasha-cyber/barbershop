@@ -37,7 +37,7 @@
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
-      if (popup.classList.contains("modal_content_show") && overlay.classList.contains("overlay_show") {
+      if (popup.classList.contains("modal_content_show") && overlay.classList.contains("overlay_show")) {
         popup.classList.remove("modal_content_show");
         overlay.classList.remove("overlay_show");
         popup.classList.remove("modal_error");
