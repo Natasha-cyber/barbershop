@@ -1,6 +1,6 @@
 = Компоненты
 
-Описание компонентов сайта detmir
+Описание компонентов сайта detmir.ru
 
 == Хедер
 
@@ -36,7 +36,9 @@
 
 Блок с элементами, указывающими на определенный раздел сайта
 
-image::img/header.png[width=300,link='img/header.png']
+=== Схема
+
+image::img/header.png[width=400,link='images/header.png']
 
 == Карусель
 
@@ -78,7 +80,9 @@ image::img/header.png[width=300,link='img/header.png']
 
 Блок с баннерами
 
-image::images/main.png[]
+=== Схема
+
+image::img/main.png[width=300,link='images/main.png']
 
 == Футер
 
@@ -98,4 +102,6 @@ image::images/main.png[]
 
 Блок с дополнительной информацией - способы оплаты, контакты, копирайт
 
-image::images/footer.png[]
+=== Схема
+
+image::img/footer.png[width=400,link='images/footer.png']
