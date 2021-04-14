@@ -36,7 +36,7 @@
 
 Блок с элементами, указывающими на определенный раздел сайта
 
-image::img/header.png['Header',width=300,link='img/header.png']
+image::img/header.png[width=300,link='img/header.png']
 
 == Карусель
 
