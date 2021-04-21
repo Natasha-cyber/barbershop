@@ -7,7 +7,7 @@ image::images/main_1.png[width=400, link='images/main_1.png']
 image::images/main_2.png[width=400, link='images/main_2.png']
 image::images/footer.png[width=500, link='images/footer.png']
 
-== Хедер (<<../../elements/site-header/README.adoc,site-header>>) [1]
+== Хедер (<<../README.md,site-header>>) [1]
 
 Шапка сайта
 
